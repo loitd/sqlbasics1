@@ -1,0 +1,16 @@
+1. select having clause
+- select col1, count(col1) from tabname 
+group by col1
+having ...
+
+- having vs where:
+	- HAVING đứng sau GROUP BY
+	- WHERE đứng trước GROUP BY
+
+2. update
+- update tabname set col1 = val1, col2 = val2 where col1 = val2;
+
+3. delete
+- delete from tabname where col1 = val1;
+- delete from tabname; 
+

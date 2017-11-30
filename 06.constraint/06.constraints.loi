@@ -1,0 +1,20 @@
+1. Các loại constraint
+- NOT NULL --> không được rỗng
+- DEFAULT  --> có giá trị mặc định
+- UNIQUE   --> có giá trị duy nhất trong bảng
+- PRIMARY  --> giá trị duy nhất và khác null
+- FOREIGN  --> là pk ở một bảng khác
+- CHECK (AGE > 16) --> kiểm tra đảm bảo tất cả các giá trị của col phải thỏa mãn điều kiện
+- INDEX    --> chỉ mục của dữ liệu được tạo ra đễ hỗ trợ truy suất
+
+2. create constraint
+- lúc tạo bảng
+create table tabname (
+	col1 int not null check (col1 > 16),
+	primary key (col1),
+	unique index idx1 (col1),
+	constraint fk1 foreign key (col1) references tab2 (col2)
+)
+
+3. drop constraint
+- drop constraint c_name;

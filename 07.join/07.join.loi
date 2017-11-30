@@ -1,0 +1,21 @@
+1. mục đích
+- lấy dữ liệu từ 2 bảng theo trường
+- excel: vlookup
+
+2. cú pháp và thực thi
+- select a.*, b.* from a
+left join b
+on a.col1 = b.col1
+where ...
+
+3. Các loại join
+- inner join
+- left join
+- right join
+- full join
+- self join
+- cartesian join (cross join)
+- equi join
+- theta join
+- natural join
+- Tham khảo thêm: http://www.developingthefuture.net/types-of-joins-in-sql/

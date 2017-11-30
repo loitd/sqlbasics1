@@ -1,0 +1,15 @@
+01. chỉnh sửa một số phần của MySQL
+- tạo password cho user root
+update mysql.user set password=PASSWORD('toor') where user='root';
+flush privileges;
+- Sửa password cho PhpMyAdmin: [XAMPP Installation Path] / phpmyadmin / config.inc.php
+- thử đăng nhập với user root
+
+02. tạo database demo
+- Relational Database Design: https://www.ntu.edu.sg/home/ehchua/programming/sql/Relational_Database_Design.html
+- download dữ liệu test (git hoặc zip): https://github.com/datacharmer/test_db
+- import dữ liệu test vào database: mysql -u root -p -t < employees.sql (-t --table)
+
+03. giới thiệu về MySql Storage Engines
+- tham khảo: https://dev.mysql.com/doc/refman/5.7/en/storage-engines.html
+- alter Storage Engine trong heidisql

@@ -1,0 +1,26 @@
+1. select command
+- select * from tab_name;
+- select col1, col2 from tab_name;
+
+2. where, and, or
+- select * from tabname where col1 = val1 and col2 = val2 or col3 = val3
+
+3. like
+- %: any chars
+- _: any char
+- select * from tabname where col1 like 'val1%' -- val112345
+- select * from tabname where col1 like '%val1'
+- select * from tabname where col1 like '%val1%'
+- select * from tabname where col1 like 'val1_' -- val11
+- select * from tabname where col1 like '_val1'
+- select * from tabname where col1 like '_val1_'
+
+4. top
+- select * from tabname limit 10;
+- select top 10 * from tabname; --MSSQLSERVER
+- select * from tabname where rownum <= 10; //oracle 
+
+5. ex
+- lấy danh sách các nhân viên có tuyển dụng trước năm 1985
+- lấy danh sách các nhân viên có tuyển dụng trước năm 1985 giới tính nữ
+- lấy danh sách các nhân viên có first_name bắt đầu bằng chữ C

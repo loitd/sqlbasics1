@@ -1,0 +1,25 @@
+1. SQL là gì?
+- Structured Query Language
+- Làm "việc" với RDBMS (MySQL, Access, Oracle, Postgres, MS SQLServer, SQLite...)
+- Tương đối giống nhau trên các RDBMS khác nhau
+
+2. Database & RDBMS là gì?
+- Lưu trữ dữ liệu
+- RDBMS: dựa trên mô hình quan hệ (Relation Model) dữ liệu được phân bố trên các Bảng (Table) với Columns và Rows, Constraints, Keys, ...
+- RDBMS vs NoSQL
+
+3. Tại sao cần học SQL
+- Dữ liệu trên các database trung bình trở lên
+- Tối ưu tốc độ và tải
+- Lương của bạn
+
+4. Thiết lập cho bài học
+- MySQL (https://www.apachefriends.org/download.html)
+- HeidiSQL (https://www.heidisql.com/download.php)
+- Chạy thử MySQL console: 
+- mysql -u root -p -D databasename
+- mysql -u root -p databasename
+- mysql -u root -p -D mysql
+- use database_name # chuyển đổi sang db khác.
+- chạy câu lệnh từ file sql từ commandline:
+mysql -u root -p -D database_name < ten_file.sql > output.log

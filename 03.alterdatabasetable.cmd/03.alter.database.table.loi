@@ -1,0 +1,22 @@
+Các câu lệnh làm việc với cơ sở dữ liệu
+1. show & select database
+- show databases;
+- use database_name;
+
+2. alter database 
+- create database db_name;
+- drop database db_name;
+- tạo db mới và user mới qua phpMyAdmin
+
+Làm việc với bảng dữ liệu (phần đầu)
+3. create table
+- create table tab_name(
+	col1 datatype NOT NULL, 
+	col2 datatype,
+	primary key (col1)
+)
+
+- drop table tab_name;
+
+- insert into tab_name(col1, col2)
+values (val1, val2);

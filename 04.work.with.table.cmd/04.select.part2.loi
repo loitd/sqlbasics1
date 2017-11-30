@@ -1,0 +1,22 @@
+1. distinct
+- select distinct col1 from tabname;
+- select distinct col1, col2 from tabname;
+- select distinct col1, col2 from tabname group by col1;
+- select distinct col1, col2 from tabname group by col2;
+- select distinct col1, col2 from tabname group by col1, col2;
+- select distinct col1, col2 from tabname group by col1, col2 order by col1 asc;
+- select distinct col1, col2 from tabname group by col1, col2 order by col1 asc, col2 desc;
+
+2. order by
+- select distinct salary from salaries order by salary asc|desc
+- select distinct salary from salaries order by col1, col2 asc|desc
+- select distinct salary from salaries order by salary asc|desc, col1 asc|desc;
+
+3. group by
+- select col1, count(*) as num from tabname group by col1;
+- select col1, sum(col1) as num from tabname group by col1;
+
+4. ex
+- đếm số nhân viên có trên csdl
+- đếm số nhân viên đã tuyển dụng trước tháng 5 năm 1985
+- đếm số nhân viên đã tuyển dụng trước tháng 5 năm 1985 có tên bắt đầu bằng chữ "Lo"
